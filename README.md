@@ -1,12 +1,14 @@
 # Make Change Project
 
 ## Description
-blah blah blah
+This program will display how much change someone will get back if they give over
+the amount owed. It return's the change back in the highest dollar and cent values.
 
 ## What I learned
-blah blah blah
+I learned how to properly name variables, make my code look clean, and how to use
+while and if loops.
 
 
 ### Technologies Used
-java, eclipse, git 
+java, eclipse, git, atom
 # MakeChangeProject

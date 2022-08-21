@@ -58,35 +58,35 @@ public class MakeChange {
 			}
 			if (100 <= change) {
 				one = change / 100;
-				one = ((100 * one) / 100) / 100;
+				one = (100 * one) / 100;
 				change = change - (one * 100);
 				System.out.print(one + " one dollar bill(s) ");
 			}
 			if (25 <= change) {
 				quarter = change / 25;
-				quarter = ((100 * quarter) % 25);
+				quarter = ((100 * quarter) / 100) % 25;
 				change = change - (quarter * 25);
 				System.out.print(quarter + " quarter(s) ");
 			}
 			if (10 <= change) {
-				dime = change / 10;
-				dime = ((100 * dime) % 10);
+				dime = change / 10; 
+				dime = ((100 * dime) /100) % 10;
 				change = change - (dime * 10);
 				System.out.print(dime + " dime(s) ");
 			}
 			if (5 <= change) {
 				nickel = change / 5;
-				nickel = ((100 * nickel) % 5);
+				nickel = ((100 * nickel) /100) % 5;
 				change = change - (nickel * 5);
 				System.out.print(nickel + " nickel(s) ");
 			}
 			if (1 <= change) {
 				penny = change / 1;
-				penny = ((100 * penny) / 1);
+				penny = ((100 * penny) / 100);
 				change = change - penny;
 				System.out.print(penny + " penny(ies) ");
 			}
-			System.out.println(itemPrice + " " + " " + tendered + " ");
+			System.out.println(itemPrice + " Item price " + " " + tendered + " Amount given");
 
 		}
 
